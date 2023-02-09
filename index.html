@@ -13,12 +13,32 @@
     <header class="cabecalho"> 
         <img class="cabecalho-imagem" src="img/logotipor.png" alt="logo da comunidade rodd"> 
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item"> Comunidade</a>
-            <a class="cabecalho-menu-item"> Tutorial </a>
-            <a class="cabecalho-menu-item"> Open source </a>
-            <a class="cabecalho-menu-item"> Comandos </a>
+            <ul>
+                <li class="cabecalho-menu-item"><a href="#" class="cabecalho-menu-link">Comunidade</a></li>
+                <li class="cabecalho-menu-item"><a href="#" class="cabecalho-menu-link">Tutorial</a></li>
+                <li class="cabecalho-menu-item"><a href="#" class="cabecalho-menu-link"> Open source</a></li>
+                <li class="cabecalho-menu-item"><a href="#" class="cabecalho-menu-link">Comandos</a></li>
+            </ul>   
         </nav>  
     </header>
+    <aside>
+        <div class="icon-menu" onclick="abrirmenu()">
+            <span><ion-icon name="menu-outline"></ion-icon></span>
+        </div>
+        <div id="barra-menu">
+            <ul class="links">
+                <li class="cabecalho-menu-item"><a href="#" id="comunidade" class="cabecalho-menu-link">Comunidade</a></li>
+                <li class="cabecalho-menu-item"><a href="#" id="tutorial" class="cabecalho-menu-link">Tutorial</a></li>
+                <li class="cabecalho-menu-item"><a href="#" id="open-source" class="cabecalho-menu-link"> Open source</a></li>
+                <li class="cabecalho-menu-item"><a href="#" id="comandos" class="cabecalho-menu-link">Comandos</a></li>
+            </ul>
+            <div class="c-icon">
+                <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-twitter"></ion-icon></span>
+            </div>
+        </div>
+    </aside>
     <main class="conteudo">
         <section class="conteudo-principal">
             <div class="conteudo-principal-escrito">
@@ -30,15 +50,20 @@
         </section>
         <section class="conteudo-secundario"> 
             <h3 class="conteudo-secundario-titulo">O que ela faz por você?</h3>
-            <p class="conteudo-secundario-paragrafo">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
-            <p class="conteudo-secundario-paragrafo">2. Possui um <strong> sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
-            <p class="conteudo-secundario-paragrafo">3.<strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
-
+            <p class="conteudo-secundario-paragrafo">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros   
+                 garantirem que não são robôs</p>
+            <p class="conteudo-secundario-paragrafo">2. Possui um <strong> sistema de banimento automático</strong> para links
+            suspeitos que forem enviados na comunidade</p>
+            <p class="conteudo-secundario-paragrafo">3.<strong>Sistema de avisos e banimento manual</strong>, para pessoas 
+            administradoras utilizarem</p>
         </section>
     </main>
     <footer class="rodape">
         <img class="rodape-imagem" src="img/RODD1.png">
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
     
